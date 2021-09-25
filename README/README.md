@@ -22,12 +22,12 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly __secured and reliable and accessible__, in addition to restricting __access___ to the network.
-- _TODO: _
+- _TODO:_
 - What aspect of security do load balancers protect? __Availiability__
 - What is the advantage of a jump box?__Jump box is the only machin that are coneccted and have access to our network's Vms for configuratione, and it is  restricted by Sec_Rules and SSh_Keys and as a Gatekeeper for the whole network. We just need to harden only one machine, no matter how big or small our network is.__  
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __files___ and system __metrics___.
-- _TODO: What does Filebeat watch for?__Collects data about the file system and monitor files for suspicious changes.__
-- _TODO: What does Metricbeat record?__collects machine metrics, such as uptime__
+- TODO: What does Filebeat watch for?__Collects data about the file system and monitor files for suspicious changes.__
+- TODO: What does Metricbeat record?__collects machine metrics, such as uptime__
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -45,13 +45,13 @@ ELK-Vm     |     ELK-Monitoring-Server     |  10.1.0.4          |      Linux    
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the __ELK__ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO:_Add whitelisted IP addresses:__
-- -__MY-Home-IP-Address.(by it's SSH-key-Public)__
+- TODO:_Add whitelisted IP addresses:__
+- __MY-Home-IP-Address.(by it's SSH-key-Public)__
 - __Jump Box PrivatIP: 10.0.0.9__
 
-Machines within the network can only be accessed by __Jump-Box-Vm___.
-- _TODO: Which machine did you allow to access your ELK VM?__JUMP-BOX__
--  What was its IP address?__10.0.0.9__
+Machines within the network can only be accessed by    __Jump-Box-Vm___.
+- TODO: Which machine did you allow to access your ELK VM?   __JUMP-BOX__
+-  What was its IP address?  __10.0.0.9__
 
 A summary of the access policies in place can be found in the table below.
 
