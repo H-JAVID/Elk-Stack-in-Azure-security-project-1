@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![ELK STACK DIAGRAM](C:\Users\hjavid\GitHub\Azure-cloud-security-project-1\README\Images)
+![ELK STACK DIAGRAM](https://github.com/Hjavid123/Azure-cloud-security-project-1/blob/main/README/Images/ELK-Diagram-Proj-13.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __YAML(Playbooks)__ file may be used to install only certain pieces of it, such as Filebeat.
 
