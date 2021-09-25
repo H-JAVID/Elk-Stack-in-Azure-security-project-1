@@ -21,8 +21,8 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly __ secured and reliable and accessible___, in addition to restricting __access___ to the network.
-- _TODO: 
+Load balancing ensures that the application will be highly __secured and reliable and accessible__, in addition to restricting __access___ to the network.
+- _TODO: _
 - What aspect of security do load balancers protect? __Availiability__
 - What is the advantage of a jump box?__Jump box is the only machin that are coneccted and have access to our network's Vms for configuratione, and it is  restricted by Sec_Rules and SSh_Keys and as a Gatekeeper for the whole network. We just need to harden only one machine, no matter how big or small our network is.__  
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __files___ and system __metrics___.
@@ -92,18 +92,18 @@ These Beats allow us to collect the following information from each machine:
 -  __METRICBEAT :__
 - __collects machine metrics, such as uptime(Uptime is a measure of how long a machine has been on. Servers are generally expected to be available for a certain percentage of the time, so analysts typically track uptime to ensure your deployments meet service-level agreements (SLAs))__,__A metric is simply a measurement about an aspect of a system that tells analysts how "healthy" it is.__
 
-- __FILEBEAT : Collects data about the file system and monitor files for suspicious changes.__
+- __FILEBEAT : Collects data about the file system and monitor files for suspicious changes._
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the __playbook.yml__ file to __/etc/ansible/ Folder___.
-- Update the __ansible.cfg___ file to include: 
-__1- Name of the playbook or services.
-__2-Ips and ports for machines.__
+- Copy the __playbook.yml__ file to __/etc/ansible/ Folder.__
+- Update the __ansible.cfg__ file to include: 
+-__1- Name of the playbook or services.__
+-__2- Ips and ports for machines.__
 
-- Run the playbook, and navigate to __Vm Machines__ to check that the installation worked as expected.
+- Run the playbook, and navigate to __ELK-VM__ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook?__YAML files with .yml__ Where do you copy it?_ __In ansible container in etc folder of the Jump-Box machine (provisioner) in which we want to config and install services.__ 
@@ -117,7 +117,7 @@ __10.0.0.10 ansible_python_interpreter=/usr/bin/python3
   __10.1.0.4 ansible_python_interpreter=/usr/bin/python3__
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-- http://(myhome)IP:5601/app/kibana
+__ - `http://(myhome)IP:5601/app/kibana`__
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc_
   Run: `curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml`
